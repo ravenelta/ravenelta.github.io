@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ravenelta.github.io/</id>
     <title>Magic Tree Hole</title>
-    <updated>2021-05-29T08:48:18.384Z</updated>
+    <updated>2021-05-29T08:57:09.702Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ravenelta.github.io/"/>
     <link rel="self" href="https://ravenelta.github.io/atom.xml"/>
@@ -10,6 +10,36 @@
     <logo>https://ravenelta.github.io/images/avatar.png</logo>
     <icon>https://ravenelta.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Magic Tree Hole</rights>
+    <entry>
+        <title type="html"><![CDATA[GitHub上竟然还有这种骚操作!]]></title>
+        <id>https://ravenelta.github.io/post/github-shang-jing-ran-huan-you-zhe-chong-sao-cao-zuo/</id>
+        <link href="https://ravenelta.github.io/post/github-shang-jing-ran-huan-you-zhe-chong-sao-cao-zuo/">
+        </link>
+        <updated>2021-05-29T07:50:33.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="github-上竟然还有这种骚操作">GitHub 上竟然还有这种骚操作!</h1>
+<p>众所周知，GitHub 是一个面向开源及私有软件项目的托管平台，因为只支持 Git 作为唯一的版本库格式进行托管，故名 GitHub。</p>
+<p>GitHub 社交化的编码理念让它成为了国内外开发者眼中神圣而不可侵犯的尤物，无数优质的开源项目依托于 GitHub，并在全球开发者的共同参与下蓬勃发展。</p>
+<p><strong>不过，讲真，你有在 GitHub 上好好的读过源码吗</strong>？</p>
+<p>不用谦虚，我估计大多数人没有这个习惯（包括我啦）。GitHub 再优秀，和 IDE 还是有差距的，在上面阅读代码实在是不够方便。我有尝试为 Chrome 浏览器装过 Octotree、Sourcegraph 这样的帮助插件，但仍然感觉用起来不够愉快。</p>
+<p>在我遇到今天分享的猪脚之前，用得最多的还是把仓库克隆到本地，然后再通过 IDE 打开后去浏览。虽然我不是一名技术极客，但总觉得这种方法有点不够潮。</p>
+<p><strong>如果能在浏览器中像 IDE 那样阅读 GitHub 源码，该多好呢</strong>？</p>
+<p>那今天我就来给大家介绍这个骚到天际的骚操作，只需要在GitHub 仓库域名后面加上 <code>1s</code>（1 秒内），比如：</p>
+<pre><code>https://github1s.com/PanJiaChen/vue-element-admin
+</code></pre>
+<p>就能在浏览器里面使用 VS Code 环境来阅读这个仓库的源码！</p>
+<p><strong>真的是大开眼界啊</strong>！</p>
+<p>就在仓库的域名后加个 <code>1s</code>，就能用支持语法高亮、代码重构的 <code>VS Code</code> 来阅读源码，大家服不服我不知道，反正我是服了！</p>
+<p>这是为什么呢？背后发生了什么呢？</p>
+<p>答案很简单，这依赖于 GitHub 上星标 15.3k 的一个仓库——名叫 <a href="https://github.com/conwnet/github1s">Github1s</a>，基于 VS Code 1.52.1，一个支持在浏览器里面直接工作的版本。</p>
+<p>Github1s 的灵感主要借鉴了 <a href="https://github.com/cdr/code-server">code-server</a> 这个优秀的开源项目，星标有 40.6K，可以将 VS Code 运行在任何支持浏览器的机器上。可以说，Github1s 是站在了巨人的肩膀上。</p>
+<p>多亏了 VS Code 强大而又灵活的可扩展性，使我们可以借助它的 <a href="https://code.visualstudio.com/api/references/vscode-api#FileSystemProvider">FileSystemProvider</a> 接口实现自定义的文件 IO 扩展。</p>
+<p>另一方面，GitHub 也提供了强有力的 <a href="https://docs.github.com/en/rest">REST API</a>，使得我们可以自由地读取仓库的目录和文件。</p>
+<p>也就是说，VS Code 的可扩展性和 GitHub 的 REST API 成就了 Github1s 的强大功能。</p>
+<p>由于 Github1s 是部署在 <a href="https://pages.github.com/">GitHub Pages</a> 上的，所以它是一个纯静态的 Web 应用程序，也就意味着它并不需要一台专门为其提供服务的服务器。赤裸裸的白嫖啊，还非常可靠，因为 GitHub Pages 就非常可靠，我的个人博客也是部署在 GitHub Pages 上的。</p>
+<p>美中不足的一点是，只能阅读源码，不能编辑，文件是只读的——希望 Github1s 的作者能在未来实现这一点，那简直就不要太舒服了。</p>
+<p>大家对这个骚操作感兴趣的话，不妨去试一下。如果有时间的话，可以顺带阅读一下 Github1s 的源码学习下。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://ravenelta.github.io/post/hello-gridea/</id>
