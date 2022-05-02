@@ -2,14 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ravenelta.github.io/</id>
     <title>Magic Tree Hole</title>
-    <updated>2021-10-15T13:21:38.030Z</updated>
+    <updated>2022-05-02T12:16:29.705Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ravenelta.github.io/"/>
     <link rel="self" href="https://ravenelta.github.io/atom.xml"/>
     <subtitle>Learn and often review and practice, isn&apos;t it happy?</subtitle>
     <logo>https://ravenelta.github.io/images/avatar.png</logo>
     <icon>https://ravenelta.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, Magic Tree Hole</rights>
+    <rights>All rights reserved 2022, Magic Tree Hole</rights>
+    <entry>
+        <title type="html"><![CDATA[双拼学习之将微软拼音设置成小鹤双拼方案]]></title>
+        <id>https://ravenelta.github.io/post/shuang-pin-xue-xi-zhi-jiang-wei-ruan-pin-yin-she-zhi-cheng-xiao-he-shuang-pin-fang-an/</id>
+        <link href="https://ravenelta.github.io/post/shuang-pin-xue-xi-zhi-jiang-wei-ruan-pin-yin-she-zhi-cheng-xiao-he-shuang-pin-fang-an/">
+        </link>
+        <updated>2022-05-02T11:55:23.000Z</updated>
+        <content type="html"><![CDATA[<p>1.按下Win+R键,进入运行界面,输入regedit,再点击“确定”即可打开注册表<br>
+2.找到这个路径：<br>
+<code>计算机\HKEY_CURRENT_USER\Software\Microsoft\InputMethod\Settings\CHS</code><br>
+3.然后新建一个名为 <code>UserDefinedDoublePinyinScheme0</code>的字符串值，<br>
+数值数据为<code>小鹤双拼*2*^*iuvdjhcwfg^xmlnpbksqszxkrltvyovt</code><br>
+<img src="https://ravenelta.github.io//post-images/1651493381997.png" alt="" loading="lazy"><br>
+4.然后打开控制面板，找到微软拼音的配置页面，把新出现的小鹤双拼设置为默认值。<br>
+<img src="https://ravenelta.github.io//post-images/1651493416554.webp" alt="" loading="lazy"></p>
+<p>设置完毕了，这样就不用自己一一对应设置键位了</p>
+<figure data-type="image" tabindex="1"><img src="https://ravenelta.github.io//post-images/1651493432691.png" alt="" loading="lazy"></figure>
+<p>为了提高打字速度和准确率，双拼相比于要被字根的五笔更简单一点，而且现在输入法都支持双拼全拼混输，当然也可以选择平台兼容性更好的微软和自然码方案</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GitHub上竟然还有这种骚操作!]]></title>
         <id>https://ravenelta.github.io/post/github-shang-jing-ran-huan-you-zhe-chong-sao-cao-zuo/</id>
